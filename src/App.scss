@@ -1,0 +1,212 @@
+/*---RESET---*/
+body {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*---STYLES---*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+  font-family: 'Mulish';
+}
+
+body {
+  background: #363740;
+  font-family: 'Mulish';
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .container {
+    background: #ffffff;
+    border: 1px solid #dfe0eb;
+    border-radius: 8px;
+    width: 380px;
+    color: #9FA2B4;
+    padding: 40px 32px;
+
+
+    .logo-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 32px;
+
+      &>.logo {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+      }
+
+      &>p {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        color: #a4a6b37c;
+        opacity: 0.7;
+      }
+    }
+
+    .descr {
+      &>h2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #252733;
+        margin-bottom: 12px;
+      }
+
+      &>h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+
+        text-align: center;
+        letter-spacing: 0.3px;
+        margin-bottom: 48px;
+
+      }
+    }
+
+    .form {
+
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      &-label {
+
+
+        &>span {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 15px;
+          letter-spacing: 0.3px;
+          text-transform: uppercase;
+
+
+
+
+        }
+
+        &-box {
+          display: flex;
+          flex-direction: column;
+
+
+          &.active {
+            position: relative;
+
+            &:before {
+              content: '';
+              position: absolute;
+              right: 10px;
+              top: calc(50% - 9px);
+              background-color: #3751FF;
+              background: url('./images/Vectoreye.svg') no-repeat;
+              background-size: cover;
+              width: 20px;
+              height: 20px;
+              background-size: contain;
+            }
+
+          }
+
+
+          &>input {
+
+            border: 1px solid #F0F1F7;
+            border-radius: 8px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 11px 16px;
+            /* identical to box height, or 143% */
+
+            letter-spacing: 0.3px;
+
+            /* grayscale / gray dark */
+
+            color: rgba(75, 80, 109, 0.4);
+
+
+            &::placeholder {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 20px;
+              letter-spacing: 0.3px;
+              color: #4B506D;
+            }
+
+
+          }
+        }
+      }
+
+      &-button {
+        background: #3751FF;
+        /* button / accent default */
+
+        box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24);
+        border-radius: 8px;
+        letter-spacing: 0.2px;
+
+        /* grayscale / white */
+
+        color: #FFFFFF;
+        width: 100%;
+        padding: 13px 24px;
+        margin-bottom: 34px;
+      }
+    }
+
+    .help {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.3px;
+
+      &>a {
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #3751FF;
+      }
+    }
+  }
+
+}
