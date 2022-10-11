@@ -1,0 +1,47 @@
+.card {
+    box-sizing: border-box;
+    padding: 32px 24px;
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    width: 258px;
+    height: 134px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+
+    &>p {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 24px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.4px;
+
+        /* grayscale / gray */
+
+        color: #9FA2B4;
+    }
+
+    &>span {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 1px;
+
+        /* grayscale / black */
+
+        color: #252733;
+    }
+
+    &:hover {
+        border: 1px solid #3751FF;
+
+        &>span,
+        &>p {
+            color: #3751FF;
+        }
+    }
+}

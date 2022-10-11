@@ -1,0 +1,22 @@
+.logo-block {
+    color: #9FA2B4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+
+    &>.logo {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+
+    &>p {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        color: #a4a6b37c;
+        opacity: 0.7;
+    }
+}

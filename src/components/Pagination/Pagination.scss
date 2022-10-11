@@ -1,0 +1,46 @@
+.paginate {
+    &-ul {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+
+        letter-spacing: 0.3px;
+
+        /* grayscale / gray */
+
+        color: #9FA2B4;
+
+        a {
+
+            color: #9FA2B4;
+        }
+
+        &-li {
+            color: inherit;
+
+            &.active {
+                color: #000000;
+                border: #010101 1px solid;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &>ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+
+        &>li {
+            display: flex;
+            gap: 20px;
+
+            &:last-child {
+                padding-right: 30px;
+            }
+
+        }
+    }
+
+}
