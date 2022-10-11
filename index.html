@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="logo-block">
+        <img src="" alt="" class="logo">
+        <p>Dashboard Kit</p>
+    </div>
+    <div class="descr">
+        <h2>Log In to Dashboard Kit</h2>
+        <h3>Enter your email and password</h3>
+    </div>
+    <form className="new-event-form" onSubmit={handleSubmit}>
+        <label>
+            <span>Event Title:</span>
+            <input type="text" onChange={(e)=> setTitle(e.target.value)}
+            value={title}
+            />
+        </label>
+        <label>
+            <span>Event Date:</span>
+            <input type="date" />
+        </label>
+        <label>
+            <span>Event location: </span>
+            <br />
+            <select onChange={e=>setLocation(e.target.value)}>
+                <option value="Madrid">Madrid</option>
+                <option value="Mieszków">Mieszków</option>
+                <option value="Poznan">Poznan</option>
+            </select>
+        </label>
+        <button>Submit</button>
+        <button onClick={resetForm}>Reset</button>
+    </form>
+</div>
